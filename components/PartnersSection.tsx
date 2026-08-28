@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { partners } from "@/data/company";
 import SectionHeader from "./SectionHeader";
 
@@ -10,17 +11,29 @@ export default function PartnersSection() {
           subtitle="Proudly associated with globally renowned brands for better patient outcomes."
         />
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
           {partners.map((partner, i) => (
             <div
               key={i}
-              className="group flex flex-col items-center justify-center rounded-xl bg-slate-50 border border-slate-100 p-6 hover:border-blue-200 hover:shadow-lg hover:shadow-blue-900/5 transition-all duration-300"
+              className="group flex flex-col items-center justify-center rounded-xl bg-white border border-slate-100 p-6 hover:border-blue-200 hover:shadow-lg hover:shadow-blue-900/5 transition-all duration-300 h-40"
             >
-              <div className="h-12 flex items-center justify-center mb-3">
-                <span className="text-lg font-bold text-slate-800 group-hover:text-blue-700 transition-colors">
-                  {partner.name}
-                </span>
-              </div>
+              {partner.logo ? (
+                <div className="relative h-12 w-full mb-3 flex items-center justify-center">
+                  <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    width={140}
+                    height={48}
+                    className="object-contain max-h-12 w-auto grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                </div>
+              ) : (
+                <div className="h-12 flex items-center justify-center mb-3">
+                  <span className="text-lg font-bold text-slate-800 group-hover:text-blue-700 transition-colors">
+                    {partner.name}
+                  </span>
+                </div>
+              )}
               <span className="text-xs font-medium text-slate-500 text-center">
                 {partner.category}
               </span>

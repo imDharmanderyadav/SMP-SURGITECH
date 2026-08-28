@@ -81,7 +81,7 @@ export const partners = [
   { name: "St. Jude Medical", category: "CRM & Structural Heart", logo: "/partners/st-jude.jpg" },
   { name: "J&J MedTech", category: "Surgical Solutions", logo: "/partners/medtech.jpg" },
   { name: "Pocket ECG", category: "Diagnostic Devices", logo: "/partners/pocket-ecg.jpg" },
-  { name: "Boston Scientific", category: "Peripheral Division", logo: null },
-  { name: "ASAHI", category: "Guidewires", logo: null },
-  { name: "Spectrum MedTech", category: "Accessories", logo: null },
+//   { name: "Boston Scientific", category: "Peripheral Division", logo: null },
+//   { name: "ASAHI", category: "Guidewires", logo: null },
+//   { name: "Spectrum MedTech", category: "Accessories", logo: null },
 ];

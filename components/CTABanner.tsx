@@ -1,15 +1,32 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, HeartPulse } from "lucide-react";
 
 export default function CTABanner() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900">
+    <section className="relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <Image
+          src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1920&q=80"
+          alt="Hospital background"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-blue-950/95 to-slate-900/95" />
+      </div>
+
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+
       <div className="container-custom relative mx-auto section-padding">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold text-white sm:text-4xl">
+            <div className="inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 text-sm font-medium text-blue-300">
+              <HeartPulse className="h-4 w-4" />
               Partnering for Better Healthcare
+            </div>
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">
+              Committed to Saving Lives
             </h2>
             <p className="text-lg text-slate-300 leading-relaxed">
               We are committed to empowering hospitals, clinics, and healthcare
