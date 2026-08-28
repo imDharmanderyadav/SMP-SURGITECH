@@ -1,7 +1,20 @@
 import { Phone, Mail, MapPin, Clock, Building2 } from "lucide-react";
 import { companyInfo } from "@/data/company";
 
-const contactCards = [
+type ContactLine = {
+  label: string;
+  value: string;
+  href?: string;
+};
+
+type ContactCard = {
+  icon: typeof Phone;
+  title: string;
+  lines: ContactLine[];
+  color: string;
+};
+
+const contactCards: ContactCard[] = [
   {
     icon: Phone,
     title: "Phone",
