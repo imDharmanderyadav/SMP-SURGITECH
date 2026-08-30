@@ -7,7 +7,7 @@ export default function ContactMap() {
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Map */}
           <div className="lg:col-span-2 rounded-2xl overflow-hidden border border-slate-200 shadow-lg bg-white">
-            <div className="relative h-96 lg:h-[500px] bg-slate-200">
+            <div className="relative h-96 lg:h-[610px] bg-slate-200">
               {/* Embedded Google Maps iframe - replace with actual embed code */}
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.9988797476576!2d77.026638!3d28.459497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDI3JzM0LjIiTiA3N8KwMDEnMzUuOSJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"

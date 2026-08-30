@@ -21,8 +21,8 @@
 //       const categoryBrandMap: Record<string, string[]> = {
 //         stents: ["abbott"],
 //         balloons: ["abbott", "cordis"],
-//         catheters: ["abbott", "cordis", "boston-scientific", "teleflex"],
-//         guidewires: ["abbott", "asahi", "teleflex"],
+//         catheters: ["abbott", "cordis" , "teleflex"],
+//         guidewires: ["abbott",    "teleflex"],
 //         interventional: ["abbott", "cordis", "teleflex", "spectrum"],
 //       };
 //       const allowedBrands = categoryBrandMap[activeCategory] || [];
@@ -100,13 +100,14 @@ import ProductSearch from "@/components/products/ProductSearch";
 import ProductCategoryNav from "@/components/products/ProductCategoryNav";
 import BrandCard from "@/components/products/BrandCard";
 import { brands } from "@/data/products";
+import PartnersSection from "@/components/PartnersSection";
 
 export default function ProductsPage() {
   const [searchQuery, setSearchQuery] = useState("");
 
   const filteredBrands = useMemo(() => {
     if (!searchQuery) return brands;
-    
+
     return brands.filter((brand) =>
       brand.divisions.some((division) =>
         division.products.some((product) =>
@@ -152,6 +153,9 @@ export default function ProductsPage() {
           )}
         </div>
       </section>
+
+      
+            <PartnersSection />
     </div>
   );
 }

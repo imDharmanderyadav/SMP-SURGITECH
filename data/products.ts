@@ -152,8 +152,8 @@
 //     ],
 //   },
 //   {
-//     id: "asahi",
-//     name: "ASAHI",
+//     id:   
+//     name:   
 //     divisions: [
 //       {
 //         name: "Guidewires",
@@ -259,7 +259,7 @@ export const productCategories: ProductCategory[] = [
         description: "High quality stents for better support and patient outcomes.",
         icon: "Activity",
         image: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=600&q=80",
-        brands: ["abbott", "boston-scientific"],
+        brands: ["abbott"],
     },
     {
         id: "balloons",
@@ -267,7 +267,7 @@ export const productCategories: ProductCategory[] = [
         description: "PTCA & Specialty Balloons for precise dilation.",
         icon: "CircleDot",
         image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&q=80",
-        brands: ["abbott", "cordis", "boston-scientific", "teleflex"],
+        brands: ["abbott", "cordis", "teleflex"],
     },
     {
         id: "catheters",
@@ -275,7 +275,7 @@ export const productCategories: ProductCategory[] = [
         description: "Advanced catheters designed for safety and performance.",
         icon: "Route",
         image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80",
-        brands: ["abbott", "cordis", "boston-scientific", "teleflex"],
+        brands: ["abbott", "cordis", "teleflex"],
     },
     {
         id: "guidewires",
@@ -283,7 +283,7 @@ export const productCategories: ProductCategory[] = [
         description: "High performance guidewires for better navigation.",
         icon: "GitBranch",
         image: "https://images.unsplash.com/photo-1581093458791-9d42e3c7e117?w=600&q=80",
-        brands: ["abbott", "asahi", "teleflex"],
+        brands: ["abbott", "teleflex"],
     },
     {
         id: "interventional",
@@ -394,58 +394,6 @@ export const brands: Brand[] = [
                     { id: "sjs-4", name: "VSD", image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=300&q=80" },
                     { id: "sjs-5", name: "Delivery System", image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=300&q=80" },
                     { id: "sjs-6", name: "Sizing Balloon", image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=300&q=80" },
-                ],
-            },
-        ],
-    },
-    {
-        id: "boston-scientific",
-        name: "Boston Scientific (Peripheral Division)",
-        logo: null,
-        image: "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=800&q=80",
-        divisions: [
-            {
-                name: "Peripheral Vascular",
-                image: "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=400&q=80",
-                products: [
-                    { id: "bs-1", name: "Carotid Wallstent", image: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=300&q=80" },
-                    { id: "bs-2", name: "Peripheral Stent Self Expandable", image: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=300&q=80" },
-                    { id: "bs-3", name: "Peripheral Stent Balloon Mounted", image: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=300&q=80" },
-                    { id: "bs-4", name: "Pharmacomechanical Catheter Directed", image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=300&q=80" },
-                    { id: "bs-5", name: "Thrombectomy Catheter", image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=300&q=80" },
-                    { id: "bs-6", name: "PVA Particle", image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=300&q=80" },
-                    { id: "bs-7", name: "014 DC Peripheral Balloon", image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=300&q=80" },
-                    { id: "bs-8", name: "High Pressure NC Balloon", image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=300&q=80" },
-                    { id: "bs-9", name: "018 Wire Compatible SC Balloon", image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=300&q=80" },
-                    { id: "bs-10", name: "Drug Coated Balloon", image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=300&q=80" },
-                    { id: "bs-11", name: "Micro Catheter", image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=300&q=80" },
-                    { id: "bs-12", name: "Guide Catheter", image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=300&q=80" },
-                    { id: "bs-13", name: "Runway Support Catheter", image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=300&q=80" },
-                    { id: "bs-14", name: "Coils 018/035 Pushable/Interlock", image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=300&q=80" },
-                    { id: "bs-15", name: "014 Wire Compatible Peripheral 300cm", image: "https://images.unsplash.com/photo-1581093458791-9d42e3c7e117?w=300&q=80" },
-                    { id: "bs-16", name: "018 Wire Compatible Peripheral 300cm", image: "https://images.unsplash.com/photo-1581093458791-9d42e3c7e117?w=300&q=80" },
-                    { id: "bs-17", name: "Angioplasty Wire", image: "https://images.unsplash.com/photo-1581093458791-9d42e3c7e117?w=300&q=80" },
-                    { id: "bs-18", name: "Thrombus Aspiration Device (AngioJet Console)", image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=300&q=80" },
-                ],
-            },
-        ],
-    },
-    {
-        id: "asahi",
-        name: "ASAHI",
-        logo: null,
-        image: "https://images.unsplash.com/photo-1581093458791-9d42e3c7e117?w=800&q=80",
-        divisions: [
-            {
-                name: "Guidewires",
-                image: "https://images.unsplash.com/photo-1581093458791-9d42e3c7e117?w=400&q=80",
-                products: [
-                    { id: "as-1", name: "Fielder XT, XTA, XTR", image: "https://images.unsplash.com/photo-1581093458791-9d42e3c7e117?w=300&q=80" },
-                    { id: "as-2", name: "Sion Blue, Black", image: "https://images.unsplash.com/photo-1581093458791-9d42e3c7e117?w=300&q=80" },
-                    { id: "as-3", name: "GAIA Next 3", image: "https://images.unsplash.com/photo-1581093458791-9d42e3c7e117?w=300&q=80" },
-                    { id: "as-4", name: "Mirage 1.4, 1.5", image: "https://images.unsplash.com/photo-1581093458791-9d42e3c7e117?w=300&q=80" },
-                    { id: "as-5", name: "Rinato", image: "https://images.unsplash.com/photo-1581093458791-9d42e3c7e117?w=300&q=80" },
-                    { id: "as-6", name: "Conquest PRO 9/PRO12", image: "https://images.unsplash.com/photo-1581093458791-9d42e3c7e117?w=300&q=80" },
                 ],
             },
         ],

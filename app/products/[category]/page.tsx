@@ -169,6 +169,7 @@ import { useParams } from "next/navigation";
 import { ArrowRight, ArrowLeft, Package, HeartPulse, Search, X, SlidersHorizontal } from "lucide-react";
 import { productCategories, brands } from "@/data/products";
 import CategoryProductCard from "@/components/products/CategoryProductCard";
+import TrustBadges from "@/components/TrustBadges";
 
 export default function CategoryPage() {
   const params = useParams();
@@ -461,6 +462,7 @@ export default function CategoryPage() {
           </div>
         </div>
       </section>
+      <TrustBadges />  
     </div>
   );
 }
